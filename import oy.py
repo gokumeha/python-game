@@ -152,7 +152,7 @@ def gameLoop():
             game_close = True
         
         dis.fill(blue)
-        pygame.draw.rect(dis, green, [foodx, foody, snake_block, snake_block])
+        pygame.draw.rect(dis, yellow, [foodx, foody, snake_block, snake_block])
         
         # Player 1 snake - only if alive
         if player1_alive:
@@ -201,7 +201,7 @@ def gameLoop():
         if player1_alive:
             our_snake(snake_block, snake_List1, black)
         if player2_alive:
-            our_snake(snake_block, snake_List2, purple)
+            our_snake(snake_block, snake_List2, red)
         
         # Display scores (points instead of snake length)
         display_scores(player1_points, player2_points)
@@ -220,7 +220,7 @@ def gameLoop():
             Length_of_snake2 += 2
  
         clock.tick(snake_speed)
-    print("YOU LOSE")
+ 
     pygame.quit()
     quit()
  
