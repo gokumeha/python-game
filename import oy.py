@@ -220,7 +220,7 @@ def gameLoop():
             Length_of_snake2 += 2
  
         clock.tick(snake_speed)
- 
+    print("YOU LOSE")
     pygame.quit()
     quit()
  
