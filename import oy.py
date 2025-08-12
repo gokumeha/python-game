@@ -12,7 +12,7 @@ green = (0, 255, 0)
 blue = (50, 153, 213)
 purple = (128, 0, 128)
 gray = (128, 128, 128)
- 
+print("Welcome to the game")
 dis_width = 800  # Increased width for better UI
 dis_height = 500  # Increased height for better UI
  
@@ -395,11 +395,11 @@ def gameLoop():
             countdown = max(0, int(player2_respawn_time - current_time))
             if countdown > 0:
                 display_respawn_countdown(player2_name, countdown)
-
+    
         pygame.display.update()
         clock.tick(snake_speed)
 
     pygame.quit()
     quit()
-
+    
 gameLoop()
